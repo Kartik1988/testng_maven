@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Pet Store API tests" duration-ms="12197" started-at="2020-07-01T16:58:25 IST" finished-at="2020-07-01T16:58:37 IST">
+    <groups>
+    </groups>
+    <test name="Pet API tests" duration-ms="12197" started-at="2020-07-01T16:58:25 IST" finished-at="2020-07-01T16:58:37 IST">
+      <class name="com.petstore.PetTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.petstore.PetTests@5700d6b1]" name="beforeClass" is-config="true" duration-ms="2281" started-at="2020-07-01T16:58:25 IST" finished-at="2020-07-01T16:58:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="addNewPet()[pri:0, instance:com.petstore.PetTests@5700d6b1]" name="addNewPet" duration-ms="7153" started-at="2020-07-01T16:58:27 IST" finished-at="2020-07-01T16:58:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewPet -->
+        <test-method status="PASS" signature="verifyNewPet()[pri:1, instance:com.petstore.PetTests@5700d6b1]" name="verifyNewPet" duration-ms="638" started-at="2020-07-01T16:58:35 IST" finished-at="2020-07-01T16:58:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewPet -->
+        <test-method status="PASS" signature="updatePet()[pri:2, instance:com.petstore.PetTests@5700d6b1]" name="updatePet" duration-ms="490" started-at="2020-07-01T16:58:35 IST" finished-at="2020-07-01T16:58:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePet -->
+        <test-method status="PASS" signature="verifyUpdate()[pri:3, instance:com.petstore.PetTests@5700d6b1]" name="verifyUpdate" duration-ms="455" started-at="2020-07-01T16:58:36 IST" finished-at="2020-07-01T16:58:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdate -->
+        <test-method status="PASS" signature="deletePetAndDoCheck()[pri:4, instance:com.petstore.PetTests@5700d6b1]" name="deletePetAndDoCheck" duration-ms="1035" started-at="2020-07-01T16:58:36 IST" finished-at="2020-07-01T16:58:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePetAndDoCheck -->
+      </class> <!-- com.petstore.PetTests -->
+    </test> <!-- Pet API tests -->
+  </suite> <!-- Pet Store API tests -->
+</testng-results>
