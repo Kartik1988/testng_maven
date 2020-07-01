@@ -1,5 +1,8 @@
-To run project  
+--------------------------------To run project -------------------------- 
 
  mvn clean test
  
- Report
+ --------------------------------Report--------------------
+ 
+ target/surefire-reports/html/index.html
+
