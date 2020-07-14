@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Objects;
 
 
-/**
- * Created by inhab on 3/2/2020.
- */
 
 public class Pet {
 
