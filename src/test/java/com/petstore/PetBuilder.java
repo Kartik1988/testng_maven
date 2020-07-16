@@ -15,7 +15,6 @@ public class  PetBuilder {
     public static final String PHOTO_URL = "https://homepages.cae.wisc.edu/~ece533/images/airplane.png";
 
 
-    testdata test1;
     Pet pet = new Pet.Builder1()
             .withId(RandomStringUtils.randomNumeric(15))
             .withName("test")
