@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="9.781" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="6.678" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
     <property name="java.vm.version" value="25.91-b14"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="G:/testng_maven"/>
+    <property name="maven.multiModuleProjectDirectory" value="G:/sample/testng_maven"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="G:\testng_maven"/>
+    <property name="user.dir" value="G:\sample\testng_maven"/>
     <property name="java.runtime.version" value="1.8.0_91-b14"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
@@ -62,9 +62,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="addNewPet" classname="com.petstore.PetTests" time="7.161"/>
-  <testcase name="verifyNewPet" classname="com.petstore.PetTests" time="0.656"/>
-  <testcase name="updatePet" classname="com.petstore.PetTests" time="0.473"/>
-  <testcase name="verifyUpdate" classname="com.petstore.PetTests" time="0.456"/>
-  <testcase name="deletePetAndDoCheck" classname="com.petstore.PetTests" time="1.035"/>
+  <testcase name="verifyAdd" classname="com.petstore.PetTests" time="2.922"/>
+  <testcase name="verifyNewPet" classname="com.petstore.PetTests" time="0.522"/>
+  <testcase name="updatePet" classname="com.petstore.PetTests" time="0.465"/>
+  <testcase name="verifyUpdate" classname="com.petstore.PetTests" time="0.444"/>
+  <testcase name="deletePetAndDoCheck" classname="com.petstore.PetTests" time="0.927"/>
+  <testcase name="verifyAddCheckStatus" classname="com.petstore.PetTests" time="0.437"/>
+  <testcase name="verifySchema" classname="com.petstore.PetTests" time="0.961"/>
 </testsuite>

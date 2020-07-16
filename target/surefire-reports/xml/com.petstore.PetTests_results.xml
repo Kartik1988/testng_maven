@@ -1,37 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Pet API tests"
-           tests="5"
+           tests="7"
            failures="0"
            errors="0"
            skipped="0"
-           time="9.771">
+           time="6.670">
     <properties></properties>
 
 
 
             <testcase
-                name="updatePet"
-                time="0.490"
-                classname="com.petstore.PetTests">
-            </testcase>
-            <testcase
-                name="addNewPet"
-                time="7.153"
+                name="verifyAdd"
+                time="2.916"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="verifyNewPet"
-                time="0.638"
+                time="0.521"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifySchema"
+                time="0.968"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="verifyUpdate"
-                time="0.455"
+                time="0.443"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifyAddCheckStatus"
+                time="0.428"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="deletePetAndDoCheck"
-                time="1.035"
+                time="0.928"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="updatePet"
+                time="0.466"
                 classname="com.petstore.PetTests">
             </testcase>
 </testsuite>

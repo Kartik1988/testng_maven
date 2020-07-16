@@ -1,6 +1,6 @@
-G:\testng_maven\src\main\java\com\petstore\dto\Pet.java
-G:\testng_maven\src\main\java\com\petstore\Base.java
-G:\testng_maven\src\main\java\com\petstore\restassured\PetsRestAssured.java
-G:\testng_maven\src\main\java\com\petstore\dto\Tag.java
-G:\testng_maven\src\main\java\com\petstore\dto\Status.java
-G:\testng_maven\src\main\java\com\petstore\dto\Category.java
+G:\sample\testng_maven\src\main\java\com\petstore\dto\Status.java
+G:\sample\testng_maven\src\main\java\com\petstore\restassured\PetsRestAssured.java
+G:\sample\testng_maven\src\main\java\com\petstore\dto\Pet.java
+G:\sample\testng_maven\src\main\java\com\petstore\dto\Category.java
+G:\sample\testng_maven\src\main\java\com\petstore\dto\Tag.java
+G:\sample\testng_maven\src\main\java\com\petstore\Base.java

@@ -1,8 +1,8 @@
 com\petstore\dto\Pet$1.class
-com\petstore\dto\Pet$Builder.class
 com\petstore\restassured\PetsRestAssured.class
 com\petstore\dto\Category.class
 com\petstore\dto\Pet.class
 com\petstore\Base.class
+com\petstore\dto\Pet$Builder1.class
 com\petstore\dto\Status.class
 com\petstore\dto\Tag.class
