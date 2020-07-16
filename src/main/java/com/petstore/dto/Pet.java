@@ -7,7 +7,10 @@ import java.util.List;
 import java.util.Objects;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e89a5f05d127c0c5b444f5b20b4bc5bf4e419b11
 
 public class Pet {
 
