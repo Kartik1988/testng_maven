@@ -1,13 +1,13 @@
 package com.petstore.dto;
 
+import javafx.util.Builder;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 
-/**
- * Created by inhab on 3/2/2020.
- */
+
 
 public class Pet {
 
@@ -68,8 +68,9 @@ public class Pet {
     public void setStatus(Status status) {
         this.status = status;
     }
-
-    @Override
+    //The toString() method returns the string representation of the object.
+// If you print any object, java compiler internally invokes the toString() method on the object
+    /* @Override
     public String toString() {
         return "Pet{" +
                 "id='" + id + '\'' +
@@ -80,16 +81,16 @@ public class Pet {
                 ", status=" + status +
                 '}';
     }
-
-    @Override
+    //The equal method is defined into object class,so we need to inherited its from object class
+ /*   @Override
     public boolean equals(Object o) {
-        if (this == o) {
+        if (this == o) { //Checking the same object inour case
             return true;
         }
-        if (o == null || getClass() != o.getClass()) {
+        if (o == null || getClass() != o.getClass()) {//ifthis object and incoming object has different type then false
             return false;
         }
-        Pet pet = (Pet) o;
+        Pet pet = (Pet) o;//Type casting the object//one object reference to type cast into other object
         return Objects.equals(this.id, pet.id) &&
                 Objects.equals(this.category, pet.category) &&
                 Objects.equals(this.name, pet.name) &&
@@ -97,8 +98,8 @@ public class Pet {
                 Objects.equals(this.tags, pet.tags) &&
                 Objects.equals(this.status, pet.status);
     }
-
-    public static class Builder {
+*/
+    public static class Builder1 extends Pet {
         private String id;
         private Category category;
         private String name;
@@ -106,36 +107,36 @@ public class Pet {
         private List<Tag> tags = new ArrayList<>();
         private Status status;
 
-        public Builder() {
+        public Builder1() {
 
         }
 
-        public Builder withId(String id) {
+        public Builder1 withId(String id) {
             this.id = id;
             return this;
         }
 
-        public Builder inCategory(Category category) {
+        public Builder1 inCategory(Category category) {
             this.category = category;
             return this;
         }
 
-        public Builder withName(String name) {
+        public Builder1 withName(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder withPhotoUrls(List<String> photoUrls) {
+        public Builder1 withPhotoUrls(List<String> photoUrls) {
             this.photoUrls = photoUrls;
             return this;
         }
 
-        public Builder withTags(List<Tag> tags) {
+        public Builder1 withTags(List<Tag> tags) {
             this.tags = tags;
             return this;
         }
 
-        public Builder withStatus(Status status) {
+        public Builder1 withStatus(Status status) {
             this.status = status;
             return this;
         }

@@ -31,7 +31,7 @@ public class Category   {
     this.name = name;
   }
 
-  @Override
+  /* @Override
   public String toString() {
     return "Category{" +
             "id=" + id +
@@ -39,7 +39,7 @@ public class Category   {
             '}';
   }
 
-  @Override
+   @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -49,8 +49,8 @@ public class Category   {
     }
     Category category = (Category) o;
     return Objects.equals(this.id, category.id) &&
-        Objects.equals(this.name, category.name);
+            Objects.equals(this.name, category.name);
   }
-
+*/
 }
 

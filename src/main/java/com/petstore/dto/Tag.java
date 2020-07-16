@@ -31,7 +31,7 @@ public class Tag   {
     this.name = name;
   }
 
-  @Override
+/* @Override
   public String toString() {
     return "Tag{" +
             "id=" + id +
@@ -39,7 +39,7 @@ public class Tag   {
             '}';
   }
 
-  @Override
+  /* @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -49,8 +49,8 @@ public class Tag   {
     }
     Tag tag = (Tag) o;
     return Objects.equals(this.id, tag.id) &&
-        Objects.equals(this.name, tag.name);
-  }
+            Objects.equals(this.name, tag.name);
+  } */
 
 }
 

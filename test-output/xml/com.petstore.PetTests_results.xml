@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testng_maven"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="9.125">
+    <properties></properties>
+
+
+
+            <testcase
+                name="deletePetAndDoCheck"
+                time="0.977"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifyAdd"
+                time="5.340"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="updatePet"
+                time="0.470"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifyUpdate"
+                time="0.436"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifySchema"
+                time="0.902"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifyAddCheckStatus"
+                time="0.452"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifyNewPet"
+                time="0.548"
+                classname="com.petstore.PetTests">
+            </testcase>
+</testsuite>
