@@ -4,44 +4,44 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="8.203">
+           time="8.438">
     <properties></properties>
 
 
 
             <testcase
-                name="deletePetAndDoCheck"
-                time="1.015"
+                name="verifyNewPet"
+                time="0.548"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="verifyAdd"
-                time="4.341"
+                time="4.536"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="updatePet"
-                time="0.465"
+                time="0.448"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
-                name="verifyUpdate"
-                time="0.453"
-                classname="com.petstore.PetTests">
-            </testcase>
-            <testcase
-                name="verifySchema"
-                time="0.963"
+                name="deletePetAndDoCheck"
+                time="1.022"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
                 name="verifyAddCheckStatus"
-                time="0.462"
+                time="0.440"
                 classname="com.petstore.PetTests">
             </testcase>
             <testcase
-                name="verifyNewPet"
-                time="0.504"
+                name="verifyUpdate"
+                time="0.442"
+                classname="com.petstore.PetTests">
+            </testcase>
+            <testcase
+                name="verifySchema"
+                time="1.002"
                 classname="com.petstore.PetTests">
             </testcase>
 </testsuite>

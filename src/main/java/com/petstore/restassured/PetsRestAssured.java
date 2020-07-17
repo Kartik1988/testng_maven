@@ -6,11 +6,16 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static com.petstore.Base.BASE_URL;
 import static io.restassured.RestAssured.given;
@@ -20,17 +25,22 @@ import static org.hamcrest.CoreMatchers.containsString;
 public class PetsRestAssured {
     public static String endPoints = BASE_URL + "/pet";
     private RequestSpecification request;
+    public Map defaultHeaders = new HashMap<>();
+    RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
 
     public PetsRestAssured() {
-        RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
+       // RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
         requestSpecBuilder.setBaseUri(BASE_URL);
         requestSpecBuilder.setContentType(ContentType.JSON);
-        requestSpecBuilder.addHeader("accept","application/json");
+        Map defaultHeaders = new HashMap<>();
+        defaultHeaders.put("accept", "application/json");
+        requestSpecBuilder.addHeaders((defaultHeaders));
         requestSpecBuilder.log(LogDetail.ALL);
         request = requestSpecBuilder.build();
     }
 
-    public Pet addPet(Pet pet) {
+    public Pet addPet(Pet pet,Map headers) {
+        requestSpecBuilder.addHeaders((headers));
         return given(request)
                 .body(pet).post(endPoints).as(Pet.class);
     }

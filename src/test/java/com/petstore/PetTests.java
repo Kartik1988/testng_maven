@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -31,7 +33,10 @@ public class PetTests {
     PetBuilder petbuilder;
     RequestSpecification res;
     public String id;
+    public String headerName;
+    public String headerValue;
     public Pet petResponseadd;
+    public Map headers = new HashMap<>();
     Response response;
 
     @BeforeClass
@@ -43,13 +48,15 @@ public class PetTests {
     @Test(priority = 0)
     public void verifyAdd() {
         petbuilder.pet.setName("testpet");
-        petResponseadd = petsRestAssured.addPet(petbuilder.pet);
+        headers.put("accept", "application/json");
+        petResponseadd = petsRestAssured.addPet(petbuilder.pet,headers);
        // assertThat(petResponseadd, is(samePropertyValuesAs(petbuilder.pet)));
         assertThat(petResponseadd.getName().toString(),is(equalTo("testpet")));
         id = petResponseadd.getId().toString();
     }
 
     @Test(priority = 5)
+
         public void verifyAddCheckStatus()
         {
             petbuilder.pet.setName("Add");
@@ -73,7 +80,7 @@ public class PetTests {
         assertEquals(petResponse.getCategory().getId(),petResponseadd.getCategory().getId());
         for(int i = 0;i <petResponse.getTags().size();i++ ) {
             assertEquals(petResponse.getTags().get(i).getId(), petResponseadd.getTags().get(i).getId());
-            System.out.println("This is the Response " + petResponseadd.getTags().get(i).getId());
+            //System.out.println("This is the Response " + petResponseadd.getTags().get(i).getId());
         }
     }
 
