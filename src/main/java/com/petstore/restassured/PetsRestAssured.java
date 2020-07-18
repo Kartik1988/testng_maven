@@ -45,7 +45,7 @@ public class PetsRestAssured {
                 .body(pet).post(endPoints).as(Pet.class);
     }
 
-    public Response addPet1(Pet jsonData) {
+    public Response addPetStatus(Pet jsonData) {
         RestAssured.baseURI  = endPoints;
         return given()
                 .contentType("application/json").
@@ -54,14 +54,14 @@ public class PetsRestAssured {
                         post("");
              }
 
-    public List<Pet> getStatus(Status status) {
+    /* public List<Pet> getStatus(Status status) {
         return given(request)
-                .queryParam("status", Status.available.toString())
+                .queryParam("status", Status.available1.toString())
                 .get(endPoints + "/findByStatus")
                 .then().log().all()
                 .extract().response()
                 .jsonPath().getList("", Pet.class);
-    }
+    } */
 
     public void deletePet(String id) {
         given(request)

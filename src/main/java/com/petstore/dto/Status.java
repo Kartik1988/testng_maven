@@ -5,7 +5,7 @@ package com.petstore.dto;
 
 public enum Status {
 
-    available("available"),
+    available("available1"),
     pending("pending"),
     sold("sold");
 

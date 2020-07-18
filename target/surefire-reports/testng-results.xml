@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Pet Store API tests" duration-ms="7913" started-at="2020-07-18T01:49:42 IST" finished-at="2020-07-18T01:49:50 IST">
+  <suite name="Pet Store API tests" duration-ms="7544" started-at="2020-07-18T22:39:52 IST" finished-at="2020-07-18T22:39:59 IST">
     <groups>
     </groups>
-    <test name="Pet API tests" duration-ms="7913" started-at="2020-07-18T01:49:42 IST" finished-at="2020-07-18T01:49:50 IST">
+    <test name="Pet API tests" duration-ms="7544" started-at="2020-07-18T22:39:52 IST" finished-at="2020-07-18T22:39:59 IST">
       <class name="com.petstore.PetTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.petstore.PetTests@5025a98f]" name="beforeClass" is-config="true" duration-ms="889" started-at="2020-07-18T01:49:42 IST" finished-at="2020-07-18T01:49:43 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.petstore.PetTests@5025a98f]" name="beforeClass" is-config="true" duration-ms="900" started-at="2020-07-18T22:39:52 IST" finished-at="2020-07-18T22:39:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="verifyAdd()[pri:0, instance:com.petstore.PetTests@5025a98f]" name="verifyAdd" duration-ms="2924" started-at="2020-07-18T01:49:43 IST" finished-at="2020-07-18T01:49:46 IST">
+        <test-method status="PASS" signature="verifyAdd()[pri:0, instance:com.petstore.PetTests@5025a98f]" name="verifyAdd" duration-ms="2818" started-at="2020-07-18T22:39:52 IST" finished-at="2020-07-18T22:39:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdd -->
-        <test-method status="PASS" signature="verifyNewPet()[pri:1, instance:com.petstore.PetTests@5025a98f]" name="verifyNewPet" duration-ms="564" started-at="2020-07-18T01:49:46 IST" finished-at="2020-07-18T01:49:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewPet -->
-        <test-method status="PASS" signature="updatePet()[pri:2, instance:com.petstore.PetTests@5025a98f]" name="updatePet" duration-ms="489" started-at="2020-07-18T01:49:46 IST" finished-at="2020-07-18T01:49:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePet -->
-        <test-method status="PASS" signature="verifyUpdate()[pri:3, instance:com.petstore.PetTests@5025a98f]" name="verifyUpdate" duration-ms="480" started-at="2020-07-18T01:49:47 IST" finished-at="2020-07-18T01:49:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdate -->
-        <test-method status="PASS" signature="deletePetAndDoCheck()[pri:4, instance:com.petstore.PetTests@5025a98f]" name="deletePetAndDoCheck" duration-ms="1017" started-at="2020-07-18T01:49:47 IST" finished-at="2020-07-18T01:49:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletePetAndDoCheck -->
-        <test-method status="PASS" signature="verifyAddCheckStatus()[pri:5, instance:com.petstore.PetTests@5025a98f]" name="verifyAddCheckStatus" duration-ms="430" started-at="2020-07-18T01:49:48 IST" finished-at="2020-07-18T01:49:49 IST">
+        <test-method status="PASS" signature="verifyAddCheckStatus()[pri:1, instance:com.petstore.PetTests@5025a98f]" name="verifyAddCheckStatus" duration-ms="471" started-at="2020-07-18T22:39:55 IST" finished-at="2020-07-18T22:39:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddCheckStatus -->
-        <test-method status="PASS" signature="verifySchema()[pri:6, instance:com.petstore.PetTests@5025a98f]" name="verifySchema" duration-ms="1049" started-at="2020-07-18T01:49:49 IST" finished-at="2020-07-18T01:49:50 IST">
+        <test-method status="PASS" signature="verifyNewPet()[pri:2, instance:com.petstore.PetTests@5025a98f]" name="verifyNewPet" duration-ms="529" started-at="2020-07-18T22:39:56 IST" finished-at="2020-07-18T22:39:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewPet -->
+        <test-method status="PASS" signature="updatePet()[pri:3, instance:com.petstore.PetTests@5025a98f]" name="updatePet" duration-ms="456" started-at="2020-07-18T22:39:56 IST" finished-at="2020-07-18T22:39:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePet -->
+        <test-method status="PASS" signature="verifyUpdate()[pri:4, instance:com.petstore.PetTests@5025a98f]" name="verifyUpdate" duration-ms="419" started-at="2020-07-18T22:39:57 IST" finished-at="2020-07-18T22:39:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdate -->
+        <test-method status="PASS" signature="deletePetAndDoCheck()[pri:5, instance:com.petstore.PetTests@5025a98f]" name="deletePetAndDoCheck" duration-ms="892" started-at="2020-07-18T22:39:57 IST" finished-at="2020-07-18T22:39:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePetAndDoCheck -->
+        <test-method status="PASS" signature="verifySchema()[pri:6, instance:com.petstore.PetTests@5025a98f]" name="verifySchema" duration-ms="996" started-at="2020-07-18T22:39:58 IST" finished-at="2020-07-18T22:39:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySchema -->

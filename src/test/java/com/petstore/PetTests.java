@@ -47,33 +47,33 @@ public class PetTests {
 
     @Test(priority = 0)
     public void verifyAdd() {
-        petbuilder.pet.setName("testpet");
+        petbuilder.pet.setName(Testdata.Test1.toString());
         headers.put("accept", "application/json");
         petResponseadd = petsRestAssured.addPet(petbuilder.pet,headers);
-       // assertThat(petResponseadd, is(samePropertyValuesAs(petbuilder.pet)));
-        assertThat(petResponseadd.getName().toString(),is(equalTo("testpet")));
+        // assertThat(petResponseadd, is(samePropertyValuesAs(petbuilder.pet)));
+        assertThat(petResponseadd.getName().toString(),is(equalTo(Testdata.Test1.toString())));
         id = petResponseadd.getId().toString();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 1)
 
-        public void verifyAddCheckStatus()
-        {
-            petbuilder.pet.setName("Add");
-            response = petsRestAssured.addPet1(petbuilder.pet);
-            int status = response.getStatusCode();
-            assertThat(status,is(equalTo(200)));
-            System.out.println(" this is the " + status);
-        }
+    public void verifyAddCheckStatus()
+    {
+        petbuilder.pet.setName(Testdata.Test1.toString());
+        response = petsRestAssured.addPetStatus(petbuilder.pet);
+        int status = response.getStatusCode();
+        assertThat(status,is(equalTo(200)));
+        System.out.println(" this is the " + status);
+    }
     @Test(priority = 6)
     public void verifySchema()
     {
         petbuilder.pet.setName("Add");
-        response = petsRestAssured.addPet1(petbuilder.pet);
+        response = petsRestAssured.addPetStatus(petbuilder.pet);
         response.then().assertThat().body(matchesJsonSchemaInClasspath("Schema.json"));
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void verifyNewPet() {
         Pet petResponse = petsRestAssured.getPet(id);
         //assertThat(petResponse, is(samePropertyValuesAs(petResponseadd)));
@@ -84,16 +84,16 @@ public class PetTests {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void updatePet() {
         petbuilder = new PetBuilder();
         petbuilder.pet.setName("Update of my pet");
         petbuilder.pet.setId("11111");
         Pet petResponse = petsRestAssured.updatePet(petbuilder.pet);
-       // assertThat(petResponse, is(samePropertyValuesAs(petbuilder.pet)));
+        // assertThat(petResponse, is(samePropertyValuesAs(petbuilder.pet)));
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void verifyUpdate() {
         petbuilder.pet.setName("Update of my pet");
         petbuilder.pet.setId("11111");
@@ -102,7 +102,7 @@ public class PetTests {
         assertEquals(petResponse.getName().toString(),"Update of my pet");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void deletePetAndDoCheck() {
         petsRestAssured.deletePet(id);
         petsRestAssured.verifyPetDeleted(id);
